@@ -12,7 +12,29 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(userResponses, userInfo) {
-  return `# ${data.title}
+    //Create ToC based on Questions' userResponses.
+let draftToC = `## Table of Conents`;
+if (userResponses.projectInstall !== '') {
+    draftToc += `
+    * [Installation](#projectInstall)`
+};
+if (userResponses.projectStory !== '') {
+    draftToc += `
+    *[Usage](#projectStory)`
+};
+if (userResponses.projectContrib !== '') {
+    draftToc += `
+    *[Contributing](#contributing)`
+};
+ let draftMarkdown =  
+ `# ${userResponses.projectTitle}
+
+![Github Repo Top Language](https://img.shields.io/github/languages/top/${userResponses.userName}/${userResponses.userRepo}?style=flat&logo=appveyor) ![License Badge]('')
+
+## Description
+
+*This is the how, what, when, where, why.*
+
 
 `;
 }
