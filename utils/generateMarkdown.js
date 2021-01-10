@@ -13,21 +13,19 @@
 // Function to generate markdown for README
 function generateMarkdown(userResponses, userInfo) {
     //Create ToC based on Questions' userResponses.
-let draftToC = `## Table of Conents`;
-if (userResponses.projectInstall !== '') {
-    draftToc += `
-    * [Installation](#projectInstall)`
-};
-if (userResponses.projectStory !== '') {
-    draftToc += `
-    *[Usage](#projectStory)`
-};
-if (userResponses.projectContrib !== '') {
-    draftToc += `
-    *[Contributing](#contributing)`
-};
- let draftMarkdown =  
- `# ${userResponses.projectTitle}
+// let draftToC = `## Table of Conents`;
+
+// if (userResponses.projectInstall !== '') { draftToc += `
+//     * [Installation](#projectInstall)`};
+
+// if (userResponses.projectStory !== '') { draftToc += `
+//     *[Usage](#projectStory)`};
+    
+// if (userResponses.projectContrib !== '') { draftToc += `
+//     *[Contributing](#contributing)`};
+
+let draftMarkdown =  `
+# ${userResponses.projectTitle}
 
 ![Github Repo Top Language](https://img.shields.io/github/languages/top/${userResponses.userName}/${userResponses.userRepo}?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-${userResponses.license}-brightgreen.svg')
 
@@ -38,10 +36,10 @@ if (userResponses.projectContrib !== '') {
 ${userResponses.projectStory}`
 
 //Add ToC to markdown document
-draftMarkdown += draftToc;
+// draftMarkdown += draftToc;
 
 //add license
-draftMarkdown += `* [License](#projectLicense)`;
+draftMarkdown += `* [License](#userResponses.projectLicense)`;
 
 //optional sections dependant on provided answer existing
 if(userResponses.projectInstall !== '') {
