@@ -1,7 +1,11 @@
-// Packages needed for this application
-const inquirer = require('inquirer');
-const fs = require('fs');
-const generateMarkdown = require("./utils/generateMarkdown.js")
+// Packages needed
+const inquirer = require(`inquirer`);
+const fs = require(`fs`);
+const util = require(`util`);
+
+// Internal modules 
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const grabInfo = require('./utils/grabInfo.js');
 
 //  Array of questions for user input
 const questions = [{
@@ -57,8 +61,19 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
-function init() {}
+const writeAsync = util.promisify(writeToFile)
+// asynch function to initialize app
+async function init() {
+    try {
+        //prompt the questions
+    const userResponses = await inquirer.prompt(questions);
+    console.log("Your Responses:", userResponses)
+    console.log("Responses established. Goin' through your GitHub.");
+        //calling github
+    const userInfo = await grabInfo.getUser(userResponses);
+    console.log("Your GitHub user info:", userInfo);
+}
+}
 
 // Function call to initialize app
 init();
