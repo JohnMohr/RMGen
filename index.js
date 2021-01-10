@@ -23,7 +23,28 @@ const questions = [{
     type: 'input',
     message: 'Describe your project:',
     name: 'projectStory',
-    },
+},
+    {
+    type: 'input',
+    message: 'Describe how to install your project.',
+    name: 'projectInstall',
+},
+    {
+    type: 'input',
+    message: 'Do you have examples or instructions for project usage?',
+    name: 'projectUsage',
+},
+    {
+    type: 'input',
+    message: 'Who/What contributed to your project?',
+    name: 'projectContrib',
+},
+    {
+    type: 'list',
+    message: 'Choose a license for your project.',
+    name: 'projectLicense',
+    choices: ['']
+},
 ];
 
 // Function to write README file
