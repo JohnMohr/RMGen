@@ -12,21 +12,25 @@ const questions = [{
     type:'input' ,
     message: 'What is your GitHub user name?',
     name: 'userName',
+    default: 'JohnMohr',
 },
     {
     type: 'input',
     message:'What is the name of your GitHub Repo?' ,
     name: 'userRepo',
+    default: 'RMGen',
 },
     {
     type: 'input',
     message:'What is your project title?' , 
     name: 'projectTitle',
+    default: 'Default Title',
 },
     {
     type: 'input',
     message: 'Describe your project:',
     name: 'projectStory',
+    default: "Default Description",
 },
     {
     type: 'input',
@@ -35,7 +39,7 @@ const questions = [{
 },
     {
     type: 'input',
-    message: 'Do you have examples or instructions for project usage?',
+    message: 'How do you use the project?',
     name: 'projectUsage',
 },
     {
@@ -47,7 +51,7 @@ const questions = [{
     type: 'list',
     message: 'Choose a license for your project.',
     name: 'projectLicense',
-    choices: ['']
+    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
 },
 ];
 
@@ -74,7 +78,12 @@ async function init() {
     const userInfo = await grabInfo.getUser(userResponses);
     console.log("Your GitHub user info:", userInfo);
 
-    
+        //push response data to generateMarkdown
+    console.log("Generating Markdown...")
+    const markdown = generateMarkdown(userResponses, userInfo);
+    console.log(markdown);
+        //write markdown to file.
+    await writeAsync('exampleReadMe.md', markdown)
 
     } catch (error) {
         console.log(error);
