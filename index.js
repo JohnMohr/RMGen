@@ -62,6 +62,7 @@ function writeToFile(fileName, data) {
 }
 
 const writeAsync = util.promisify(writeToFile)
+
 // asynch function to initialize app
 async function init() {
     try {
@@ -72,8 +73,13 @@ async function init() {
         //calling github
     const userInfo = await grabInfo.getUser(userResponses);
     console.log("Your GitHub user info:", userInfo);
-}
-}
+
+    
+
+    } catch (error) {
+        console.log(error);
+    }
+};
 
 // Function call to initialize app
 init();
