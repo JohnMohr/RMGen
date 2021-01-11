@@ -25,28 +25,31 @@ const questions = [{
     type: 'input',
     message:'What is your project title?' , 
     name: 'projectTitle',
-    default: 'Default Title',
+    default: 'EXAMPLE TITLE',
 },
     {
     type: 'input',
     message: 'Describe your project:',
     name: 'projectStory',
-    default: "Default Description",
+    default: 'EXAMPLE TEXT',
 },
     {
     type: 'input',
     message: 'Describe how to install your project.',
     name: 'projectInstall',
+    default: 'EXAMPLE TEXT',
 },
     {
     type: 'input',
     message: 'How do you use the project?',
     name: 'projectUsage',
+    default: 'EXAMPLE TEXT',
 },
     {
     type: 'input',
     message: 'Who/What contributed to your project?',
     name: 'projectContrib',
+    default: 'EXAMPLE TEXT',
 },
     {
     type: 'list',

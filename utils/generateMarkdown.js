@@ -30,7 +30,6 @@ if (userResponses.projectStory !== '') { draftToC += `
     
 if (userResponses.projectContrib !== '') { draftToC += `
     *[Contributing](#projectContrib)
-    
     `};
 //beginning of readme. github and license badges. description response.
 let draftMarkdown =  `
@@ -45,19 +44,23 @@ let draftMarkdown =  `
 
 *How, What, When, Where, and Why:*
 
-${userResponses.projectStory}`
+${userResponses.projectStory}
+`
 
 //Add ToC to markdown document
 draftMarkdown += draftToC;
 
 //add license link
-draftMarkdown += `*[License](#userResponses.projectLicense)`;
+draftMarkdown += `
+    *[License](#userResponses.projectLicense)
+    `;
 // renderLicenseSection();
 // renderLicenseBadge();
 
 //optional sections dependant on provided answer existing
 if(userResponses.projectInstall !== '') {
     draftMarkdown += `
+***
 ## **Installation**
 
 *Required Steps of Installation:*
@@ -85,7 +88,6 @@ ${userResponses.projectContrib}
 `};
 //License section
 draftMarkdown += `
-
 ## **License**
 
 ${userResponses.projectLicense}
@@ -95,9 +97,9 @@ ${userResponses.projectLicense}
 let draftAbout =`
 
 
+***
+***
 
-***
-***
 
 ##Questions?
 

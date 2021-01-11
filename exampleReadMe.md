@@ -1,31 +1,46 @@
 
-# Default Title
+# EXAMPLE TITLE
 
 ![Github Repo Top Language](https://img.shields.io/github/languages/top/JohnMohr/RMGen?style=flat&logo=appveyor) 
 ![License Badge]('https://img.shields.io/badge/License-GNU_AGPLv3-brightgreen.svg')
+
+***
 
 ## **Description**
 
 *How, What, When, Where, and Why:*
 
-Default Description## Table of Conents
+EXAMPLE TEXT
+
+## Table of Conents
     *[Installation](#projectInstall)
+    
     *[Usage](#projectStory)
-    *[Contributing](#projectContrib)*[License](#userResponses.projectLicense)
+    
+    *[Contributing](#projectContrib)
+    
+    *[License](#userResponses.projectLicense)
+    
+***
 ## **Installation**
 
 *Required Steps of Installation:*
-fdgdf
+EXAMPLE TEXT
+
+
 
 ## **Usage**
     
 *Instructions and Usage:*
-Default Description
+EXAMPLE TEXT
+
+
 
 ## **Contributing**
     
 *People, Places & Things:*
-dfgdgdg
+EXAMPLE TEXT
+
 
 
 ## **License**
@@ -34,9 +49,9 @@ GNU_AGPLv3
 
 
 
+***
+***
 
-***
-***
 
 ##Questions?
 
