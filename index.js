@@ -6,6 +6,7 @@ const util = require(`util`);
 // Internal modules 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const grabInfo = require('./utils/grabInfo.js');
+const { defaultCipherList } = require('constants');
 
 //  Array of questions for user input
 const questions = [{
@@ -51,7 +52,8 @@ const questions = [{
     type: 'list',
     message: 'Choose a license for your project.',
     name: 'projectLicense',
-    choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+    choices: ['GNU_AGPLv3', 'GNU_GPLv3', 'GNU_LGPLv3', 'Mozilla_Public_License_2.0', 'Apache_License 2.0', 'MIT_License', 'Boost_Software_License_1.0', 'The_Unlicense'],
+    // default: 'GNU_GPLv3',
 },
 ];
 
