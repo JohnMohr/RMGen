@@ -1,32 +1,36 @@
 
 # Default Title
 
-![Github Repo Top Language](https://img.shields.io/github/languages/top/JohnMohr/RMGen?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-GNU GPLv3-brightgreen.svg')
+![Github Repo Top Language](https://img.shields.io/github/languages/top/JohnMohr/RMGen?style=flat&logo=appveyor) 
+![License Badge]('https://img.shields.io/badge/License-GNU_AGPLv3-brightgreen.svg')
 
-## Description
+## **Description**
 
-*This is the how, what, when, where, and why.*
+*How, What, When, Where, and Why:*
 
-Default Description* [License](#userResponses.projectLicense)
-## Installation
+Default Description## Table of Conents
+    *[Installation](#projectInstall)
+    *[Usage](#projectStory)
+    *[Contributing](#projectContrib)*[License](#userResponses.projectLicense)
+## **Installation**
 
 *Required Steps of Installation:*
-blah
+fdgdf
 
-## Usage
+## **Usage**
     
 *Instructions and Usage:*
 Default Description
 
-## Contributing
+## **Contributing**
     
-*People, Places & Things :*
-blah
+*People, Places & Things:*
+dfgdgdg
 
 
-## License
+## **License**
 
-GNU GPLv3
+GNU_AGPLv3
 
 
 
