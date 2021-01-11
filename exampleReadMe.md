@@ -1,32 +1,35 @@
 
-# ReadMe Markdown Generator
+# Default Title
 
-![Github Repo Top Language](https://img.shields.io/github/languages/top/JohnMohr/RMGen?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-undefined-brightgreen.svg')
+![Github Repo Top Language](https://img.shields.io/github/languages/top/JohnMohr/RMGen?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-GNU GPLv3-brightgreen.svg')
 
 ## Description
 
 *This is the how, what, when, where, and why.*
 
-BLAH BLAH* [License](#license)
+Default Description* [License](#userResponses.projectLicense)
 ## Installation
 
 *Required Steps of Installation:*
-BLAH
+blah
 
 ## Usage
     
 *Instructions and Usage:*
-BLAH BLAH
+Default Description
 
 ## Contributing
     
 *People, Places & Things :*
-    BLAH
+blah
 
 
 ## License
 
-undefined
+GNU GPLv3
+
+
+
 
 ***
 ***

@@ -27,11 +27,11 @@ function generateMarkdown(userResponses, userInfo) {
 let draftMarkdown =  `
 # ${userResponses.projectTitle}
 
-![Github Repo Top Language](https://img.shields.io/github/languages/top/${userResponses.userName}/${userResponses.userRepo}?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-${userResponses.license}-brightgreen.svg')
+![Github Repo Top Language](https://img.shields.io/github/languages/top/${userResponses.userName}/${userResponses.userRepo}?style=flat&logo=appveyor) ![License Badge]('https://img.shields.io/badge/License-${userResponses.projectLicense}-brightgreen.svg')
 
 ## Description
 
-*This is the how, what, when, where, and why.*
+*This is the how, what, when, where, and why:*
 
 ${userResponses.projectStory}`
 
@@ -60,19 +60,22 @@ if(userResponses.projectStory !== '') {
     draftMarkdown += `
 ## Contributing
     
-*People, Places & Things :*
-    ${userResponses.projectContrib}
+*People, Places & Things:*
+${userResponses.projectContrib}
 `};
 //License section
 draftMarkdown += `
 
 ## License
 
-${userResponses.license}
+${userResponses.projectLicense}
 `;
 
 // About Section
 let draftAbout =`
+
+
+
 ***
 ***
 
